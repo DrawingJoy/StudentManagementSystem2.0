@@ -8,7 +8,6 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import java.util.*;
 
 // 这里不需要@Component吧 都是静态方法
-// 话说早了
 public class JwtUtils {
 
     private static final String signKey = "U3R1ZGVudE1hbmFnZW1lbnRTeXN0ZW1PZlN5c3RlbTIyMDI1"; // 密钥
