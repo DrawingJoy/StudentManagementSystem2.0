@@ -51,7 +51,7 @@ public class LoginCheckInterceptor implements HandlerInterceptor{
             String notLogin = JSONObject.toJSONString(error);
             response.getWriter().write(notLogin);
             // 不放行
-            System.out.println("JTW令牌解析失败");
+            System.out.println("JWT令牌解析失败");
             return false;
         }
 
@@ -77,5 +77,5 @@ public class LoginCheckInterceptor implements HandlerInterceptor{
 //    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
 //        HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
 //    }
-
+    
 }
